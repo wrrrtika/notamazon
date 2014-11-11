@@ -1,2 +1,12 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1> wrrrtika co.'s old timey products and shit. </h1>
+<i> buy some stuff, you know you want to </i>
+
+
+<% @products.each do |product| %>
+	
+	<p><%= link_to product.name, product_path(product) %></p>
+	<p>Price: $ <%= product.formatted_price %></p>
+
+
+
+<% end %>
